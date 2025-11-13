@@ -24,10 +24,22 @@ spec:
             - name: DB_PORT
               value: "5432"
             - name: DB_NAME
-              value: videoservice
+              valueFrom:
+                secretKeyRef:
+                  name: postgresql-credentials
+                  key: POSTGRES_DB
             - name: DB_USER
-              value: postgres
+              valueFrom:
+                secretKeyRef:
+                  name: postgresql-credentials
+                  key: POSTGRES_USER
             - name: DB_PASSWORD
-              value: postgres
+              valueFrom:
+                secretKeyRef:
+                  name: postgresql-credentials
+                  key: POSTGRES_PASSWORD
             - name: DATABASE_URL
-              value: postgresql://postgres:postgres@postgresql:5432/videoservice
+              valueFrom:
+                secretKeyRef:
+                  name: postgresql-credentials
+                  key: DATABASE_URL
