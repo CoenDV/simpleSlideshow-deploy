@@ -3,11 +3,6 @@ kind: Kustomization
 
 namespace: projectgroup1-test
 
-secretGenerator:
-  - name: postgresql-credentials
-    envs:
-      - .env
-
 resources:
   - deployment-videoservice.yaml
   - route-videoservice.yaml
