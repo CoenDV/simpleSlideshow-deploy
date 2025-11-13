@@ -1,0 +1,10 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: communityservice
+spec:
+  to:
+    kind: Service
+    name: communityservice
+  port:
+    targetPort: 8080

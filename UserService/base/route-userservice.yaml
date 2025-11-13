@@ -1,0 +1,10 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: userservice
+spec:
+  to:
+    kind: Service
+    name: userservice
+  port:
+    targetPort: 8080

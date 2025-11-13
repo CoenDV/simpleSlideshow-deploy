@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+
+namespace: projectgroup1-test
+
+resources:
+  - deployment-chatservice.yaml
+  - route-chatservice.yaml
+  - service-chatservice.yaml
+  - deployment-postgresql.yaml
+  - service-postgresql.yaml
+  - pvc-postgresql.yaml

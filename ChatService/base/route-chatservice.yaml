@@ -1,0 +1,10 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: chatservice
+spec:
+  to:
+    kind: Service
+    name: chatservice
+  port:
+    targetPort: 8080

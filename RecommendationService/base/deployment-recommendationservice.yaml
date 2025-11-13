@@ -1,0 +1,20 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: recommendationservice
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: recommendationservice
+  template:
+    metadata:
+      labels:
+        app: recommendationservice
+    spec:
+      containers:
+        - name: recommendationservice
+          image: "ghcr.io/inholland-cloud-minor-2526/group1-recommendationservice:dev"
+          ports:
+            - containerPort: 8080
+              protocol: TCP

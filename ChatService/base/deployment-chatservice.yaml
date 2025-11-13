@@ -1,0 +1,33 @@
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: chatservice
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: chatservice
+  template:
+    metadata:
+      labels:
+        app: chatservice
+    spec:
+      containers:
+        - name: chatservice
+          image: "ghcr.io/inholland-cloud-minor-2526/group1-chatservice:dev"
+          ports:
+            - containerPort: 8080
+              protocol: TCP
+          env:
+            - name: DB_HOST
+              value: postgresql
+            - name: DB_PORT
+              value: "5432"
+            - name: DB_NAME
+              value: chatservice
+            - name: DB_USER
+              value: postgres
+            - name: DB_PASSWORD
+              value: postgres
+            - name: DATABASE_URL
+              value: postgresql://postgres:postgres@postgresql:5432/chatservice

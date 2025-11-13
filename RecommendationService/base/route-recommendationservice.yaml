@@ -1,0 +1,10 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: recommendationservice
+spec:
+  to:
+    kind: Service
+    name: recommendationservice
+  port:
+    targetPort: 8080
