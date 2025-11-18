@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: notificationservice
-          image: "ghcr.io/inholland-cloud-minor-2526/group1-notificationservice:dev"
+          image: "ghcr.io/CoenDV/group1-notificationservice:dev"
           ports:
             - containerPort: 8080
               protocol: TCP

@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: communityservice
-          image: "ghcr.io/inholland-cloud-minor-2526/group1-communityservice:dev"
+          image: "ghcr.io/CoenDV/group1-communityservice:dev"
           ports:
             - containerPort: 8080
               protocol: TCP

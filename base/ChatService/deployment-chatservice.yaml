@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: chatservice
-          image: "ghcr.io/inholland-cloud-minor-2526/group1-chatservice:dev"
+          image: "ghcr.io/CoenDV/group1-chatservice:dev"
           ports:
             - containerPort: 8080
               protocol: TCP

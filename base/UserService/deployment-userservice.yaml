@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: userservice
-          image: "ghcr.io/inholland-cloud-minor-2526/group1-userservice:dev"
+          image: "ghcr.io/CoenDV/group1-userservice:dev"
           ports:
             - containerPort: 8080
               protocol: TCP

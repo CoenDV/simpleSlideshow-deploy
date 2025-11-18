@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: videoservice
-          image: "ghcr.io/inholland-cloud-minor-2526/group1-videoservice:dev"
+          image: "ghcr.io/CoenDV/group1-videoservice:dev"
           ports:
             - containerPort: 8080
               protocol: TCP
