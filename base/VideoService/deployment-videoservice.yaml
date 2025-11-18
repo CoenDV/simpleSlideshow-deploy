@@ -16,13 +16,13 @@ spec:
         - name: videoservice
           image: "ghcr.io/CoenDV/group1-videoservice:dev"
           ports:
-            - containerPort: 8080
+            - containerPort: 8085
               protocol: TCP
           env:
             - name: DB_HOST
               value: postgresql
             - name: DB_PORT
-              value: "5432"
+              value: "5435"
             - name: DB_NAME
               value: videoservice
             - name: DB_USER

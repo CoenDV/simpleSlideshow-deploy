@@ -16,7 +16,7 @@ spec:
         - name: postgresql
           image: postgres:16-alpine
           ports:
-            - containerPort: 5432
+            - containerPort: 5435
               protocol: TCP
           env:
             - name: POSTGRES_DB

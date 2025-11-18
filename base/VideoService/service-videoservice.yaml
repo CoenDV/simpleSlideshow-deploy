@@ -10,10 +10,10 @@ metadata:
     app.kubernetes.io/name: videoservice
 spec:
   ports:
-    - name: 8080-tcp
+    - name: 8085-tcp
       protocol: TCP
-      port: 8080
-      targetPort: 8080
+      port: 8085
+      targetPort: 8085
   type: ClusterIP
   selector:
     app: videoservice
