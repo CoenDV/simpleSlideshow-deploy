@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: videoservice
-          image: "ghcr.io/CoenDV/group1-videoservice:dev"
+          image: "ghcr.io/coendv/group1-videoservice:dev"
           ports:
             - containerPort: 8085
               protocol: TCP

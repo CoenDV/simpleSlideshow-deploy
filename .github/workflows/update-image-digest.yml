@@ -10,7 +10,7 @@ on:
       image-name:
         required: true
         type: string
-        description: "Full image name without tag (e.g., ghcr.io/CoenDV/group1-videoservice)"
+        description: "Full image name without tag (e.g., ghcr.io/coendv/group1-videoservice)"
       environment:
         required: true
         type: string

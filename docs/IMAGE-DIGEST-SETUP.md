@@ -39,19 +39,19 @@ Copy the template from `docs/service-workflow-template.yml` and customize it:
 **For VideoService:**
 ```yaml
 service-name: VideoService
-image-name: ghcr.io/CoenDV/group1-videoservice
+image-name: ghcr.io/coendv/group1-videoservice
 ```
 
 **For ChatService:**
 ```yaml
 service-name: ChatService
-image-name: ghcr.io/CoenDV/group1-chatservice
+image-name: ghcr.io/coendv/group1-chatservice
 ```
 
 **For UserService:**
 ```yaml
 service-name: UserService
-image-name: ghcr.io/CoenDV/group1-userservice
+image-name: ghcr.io/coendv/group1-userservice
 ```
 
 And so on for each service.
@@ -135,10 +135,10 @@ To manually update a digest:
 
 ```bash
 # Pull the latest image
-docker pull ghcr.io/CoenDV/group1-videoservice:main
+docker pull ghcr.io/coendv/group1-videoservice:main
 
 # Get the digest
-docker inspect ghcr.io/CoenDV/group1-videoservice:main \
+docker inspect ghcr.io/coendv/group1-videoservice:main \
   --format='{{index .RepoDigests 0}}'
 
 # Update kustomization.yaml with the digest

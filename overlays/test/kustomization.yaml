@@ -7,5 +7,5 @@ resources:
   - ../../base
 images:
   - digest: sha256:ca27afc585552b0ddf6571594eb85c6f70d74cd649f5830b7c999f10a1314600
-    name: ghcr.io/CoenDV/group1-videoservice
-    newName: ghcr.io/CoenDV/group1-videoservice
+    name: ghcr.io/coendv/group1-videoservice
+    newName: ghcr.io/coendv/group1-videoservice

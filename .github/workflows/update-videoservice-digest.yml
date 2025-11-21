@@ -28,8 +28,8 @@ jobs:
           echo "${{ secrets.GITHUB_TOKEN }}" | docker login ghcr.io -u ${{ github.actor }} --password-stdin
 
           # Pull the image and get digest
-            docker pull ghcr.io/CoenDV/group1-videoservice:main
-            DIGEST=$(docker inspect --format='{{index .RepoDigests 0}}' ghcr.io/CoenDV/group1-videoservice:main | cut -d'@' -f2)
+            docker pull ghcr.io/coendv/group1-videoservice:main
+            DIGEST=$(docker inspect --format='{{index .RepoDigests 0}}' ghcr.io/coendv/group1-videoservice:main | cut -d'@' -f2)
           echo "digest=${DIGEST}" >> $GITHUB_OUTPUT
           echo "Image digest: ${DIGEST}"
 
@@ -46,7 +46,7 @@ jobs:
             - ../../base
 
             images:
-              - name: ghcr.io/CoenDV/group1-videoservice
+              - name: ghcr.io/coendv/group1-videoservice
               digest: ${{ steps.digest.outputs.digest }}
           EOF
 

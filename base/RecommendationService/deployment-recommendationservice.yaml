@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: recommendationservice
-          image: "ghcr.io/CoenDV/group1-recommendationservice:dev"
+          image: "ghcr.io/coendv/group1-recommendationservice:dev"
           ports:
             - containerPort: 8080
               protocol: TCP
