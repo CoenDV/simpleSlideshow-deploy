@@ -6,11 +6,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: postgresql
+      app: userservice-postgresql
   template:
     metadata:
       labels:
-        app: postgresql
+        app: userservice-postgresql
     spec:
       containers:
         - name: postgresql

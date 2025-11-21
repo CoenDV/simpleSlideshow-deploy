@@ -6,11 +6,11 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: postgresql
+      app: communityservice-postgresql
   template:
     metadata:
       labels:
-        app: postgresql
+        app: communityservice-postgresql
     spec:
       containers:
         - name: postgresql

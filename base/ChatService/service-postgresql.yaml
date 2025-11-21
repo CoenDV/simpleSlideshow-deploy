@@ -4,7 +4,7 @@ metadata:
   name: postgresql
 spec:
   selector:
-    app: postgresql
+    app: chatservice-postgresql
   ports:
     - protocol: TCP
       port: 5432
