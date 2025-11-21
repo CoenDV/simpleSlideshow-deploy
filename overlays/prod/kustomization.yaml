@@ -4,18 +4,19 @@ kind: Kustomization
 namespace: projectgroup1-prod
 
 resources:
-  - ../../base
+- ../../base
 
 images:
-  - name: ghcr.io/coendv/group1-chatservice
-    newTag: main
-  - name: ghcr.io/coendv/group1-communityservice
-    newTag: main
-  - name: ghcr.io/coendv/group1-notificationservice
-    newTag: main
-  - name: ghcr.io/coendv/group1-recommendationservice
-    newTag: main
-  - name: ghcr.io/coendv/group1-userservice
-    newTag: main
-  - name: ghcr.io/coendv/group1-videoservice
-    newTag: main
+- name: ghcr.io/coendv/group1-chatservice
+  newTag: main
+- name: ghcr.io/coendv/group1-communityservice
+  newTag: main
+- name: ghcr.io/coendv/group1-notificationservice
+  newTag: main
+- name: ghcr.io/coendv/group1-recommendationservice
+  newTag: main
+- digest: sha256:e1236808548240db641f23519a7f5f681dcefdc25441f7c4af83a210ed3cdabd
+  name: ghcr.io/coendv/group1-userservice
+  newName: ghcr.io/coendv/group1-userservice
+- name: ghcr.io/coendv/group1-videoservice
+  newTag: main
