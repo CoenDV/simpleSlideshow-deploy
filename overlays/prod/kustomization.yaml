@@ -20,3 +20,6 @@ images:
   newName: ghcr.io/coendv/group1-userservice
 - name: ghcr.io/coendv/group1-videoservice
   newTag: main
+- digest: sha256:43a264cf1469e5180a616d5da2ea55ada864d579e265b3a842fc9a800081180d
+  name: ghcr.io/inholland-cloud-minor-2526/group1-videoservice
+  newName: ghcr.io/inholland-cloud-minor-2526/group1-videoservice
