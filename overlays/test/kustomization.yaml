@@ -4,7 +4,10 @@ kind: Kustomization
 namespace: projectgroup1-test
 
 resources:
-  - ../../base
+- ../../base
 images:
-  - name: ghcr.io/coendv/group1-videoservice
-    newTag: dev
+- digest: sha256:db2a4cec647c29844d183803573305a169c6d0a618a26c2263e25b9a4b261d7b
+  name: ghcr.io/coendv/group1-userservice
+  newName: ghcr.io/coendv/group1-userservice
+- name: ghcr.io/coendv/group1-videoservice
+  newTag: dev
