@@ -20,7 +20,7 @@ spec:
               protocol: TCP
           env:
             - name: DB_HOST
-              value: postgresql
+              value: videoservice-postgresql
             - name: DB_PORT
               value: "5435"
             - name: DB_NAME
@@ -30,4 +30,4 @@ spec:
             - name: DB_PASSWORD
               value: postgres
             - name: DATABASE_URL
-              value: postgresql://postgres:postgres@postgresql:5432/videoservice
+              value: postgresql://postgres:postgres@videoservice-postgresql:5432/videoservice

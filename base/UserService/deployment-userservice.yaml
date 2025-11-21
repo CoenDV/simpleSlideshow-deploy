@@ -20,7 +20,7 @@ spec:
               protocol: TCP
           env:
             - name: DB_HOST
-              value: postgresql
+              value: userservice-postgresql
             - name: DB_PORT
               value: "5432"
             - name: DB_NAME
@@ -30,4 +30,4 @@ spec:
             - name: DB_PASSWORD
               value: postgres
             - name: DATABASE_URL
-              value: postgresql://postgres:postgres@postgresql:5432/userservice
+              value: postgresql://postgres:postgres@userservice-postgresql:5432/userservice
