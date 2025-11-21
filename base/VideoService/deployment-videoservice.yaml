@@ -30,4 +30,4 @@ spec:
             - name: DB_PASSWORD
               value: postgres
             - name: DATABASE_URL
-              value: postgresql://postgres:postgres@videoservice-postgresql:5432/videoservice
+              value: postgresql://postgres:postgres@videoservice-postgresql:5435/videoservice

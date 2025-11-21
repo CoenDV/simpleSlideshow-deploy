@@ -16,5 +16,5 @@ spec:
         - name: notificationservice
           image: "ghcr.io/coendv/group1-notificationservice:dev"
           ports:
-            - containerPort: 8080
+            - containerPort: 8086
               protocol: TCP

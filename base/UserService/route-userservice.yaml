@@ -7,4 +7,4 @@ spec:
     kind: Service
     name: userservice
   port:
-    targetPort: 8080
+    targetPort: 8081

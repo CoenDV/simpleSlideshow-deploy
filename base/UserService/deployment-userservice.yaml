@@ -16,13 +16,13 @@ spec:
         - name: userservice
           image: "ghcr.io/coendv/group1-userservice:dev"
           ports:
-            - containerPort: 8080
+            - containerPort: 8081
               protocol: TCP
           env:
             - name: DB_HOST
               value: userservice-postgresql
             - name: DB_PORT
-              value: "5432"
+              value: "5431"
             - name: DB_NAME
               value: userservice
             - name: DB_USER
@@ -30,4 +30,4 @@ spec:
             - name: DB_PASSWORD
               value: postgres
             - name: DATABASE_URL
-              value: postgresql://postgres:postgres@userservice-postgresql:5432/userservice
+              value: postgresql://postgres:postgres@userservice-postgresql:5431/userservice

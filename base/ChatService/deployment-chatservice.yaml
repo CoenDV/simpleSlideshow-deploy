@@ -16,7 +16,7 @@ spec:
         - name: chatservice
           image: "ghcr.io/coendv/group1-chatservice:dev"
           ports:
-            - containerPort: 8080
+            - containerPort: 8082
               protocol: TCP
           env:
             - name: DB_HOST
