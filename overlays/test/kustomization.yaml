@@ -6,7 +6,7 @@ namespace: projectgroup1-test
 resources:
 - ../../base
 images:
-- digest: sha256:80c0beb05d30544e094cd03e8c8cfb41631bafb4a64bd9d030dc2b649212c813
+- digest: sha256:839f26edec8ea634b562ef8a680a04311ae87a42afe290b1bc6ac136476b9c39
   name: ghcr.io/coendv/group1-userservice
   newName: ghcr.io/coendv/group1-userservice
 - digest: sha256:767ac833730e85b9dc7b1cf3ee87fe6230a54dc0d2a7fa4c973ca3a4222a91d9
