@@ -7,7 +7,7 @@ resources:
 - ../../base
 
 images:
-- digest: sha256:e7aa60f6ca5d47d26157ee16195f6af8ea087876a8d56413318ef6957809ab29
+- digest: sha256:050875402c9c0adbd9445c6a3a310d73a8068c0c577cab53e6ec65eca54c1045
   name: ghcr.io/coendv/group1-chatservice
   newName: ghcr.io/coendv/group1-chatservice
 - name: ghcr.io/coendv/group1-communityservice
