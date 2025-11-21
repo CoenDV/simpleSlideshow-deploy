@@ -10,6 +10,8 @@ metadata:
     app.kubernetes.io/name: videoservice
   annotations:
     haproxy.router.openshift.io/timeout: 30s
+spec:
+  host: videoservice-projectgroup1-test.apps.inholland-minor.openshift.eu
   to:
     kind: Service
     name: videoservice
