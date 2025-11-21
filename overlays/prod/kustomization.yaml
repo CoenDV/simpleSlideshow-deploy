@@ -15,7 +15,7 @@ images:
   newTag: main
 - name: ghcr.io/coendv/group1-recommendationservice
   newTag: main
-- digest: sha256:e1236808548240db641f23519a7f5f681dcefdc25441f7c4af83a210ed3cdabd
+- digest: sha256:e6dc928ff484cf350675f345356bfeae733a8e99a766f4eec77f8f56b630387c
   name: ghcr.io/coendv/group1-userservice
   newName: ghcr.io/coendv/group1-userservice
 - name: ghcr.io/coendv/group1-videoservice
