@@ -6,6 +6,9 @@ namespace: projectgroup1-test
 resources:
 - ../../base
 images:
+- digest: sha256:5ca65d2c3f9c97957c82c12685e2e2eed77748aab632b34cddcca4fa8a47c2b1
+  name: ghcr.io/coendv/group1-chatservice
+  newName: ghcr.io/coendv/group1-chatservice
 - digest: sha256:821b46b3397d4e92773124d2221448cde013e92ebedc1e7dfbbebb2d477cdbba
   name: ghcr.io/coendv/group1-notificationservice
   newName: ghcr.io/coendv/group1-notificationservice
