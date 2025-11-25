@@ -57,7 +57,7 @@ spec:
             - name: MUX_TOKEN_SECRET
               value: "hkv45o8kuUwaAUE0Yxm6wZk8H/3jHCw8d1xDPqzAetlA+i1pnK9V+EiQB4mgODR96kAXZVciUhZ"
             - name: MUX_WEBHOOK_SECRET
-              value: "08t9j4l5b7ur4gbhoj8mokp7l6mthd6m"
+              value: "e84qshv104n9bhv2bju08ks5pqapdmf4"
             - name: MUX_STREAM_HOST
               value: "stream.mux.com"
             - name: MUX_SIGNING_KEY_ID
