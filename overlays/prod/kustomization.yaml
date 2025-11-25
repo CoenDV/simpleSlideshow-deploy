@@ -4,24 +4,24 @@ kind: Kustomization
 namespace: projectgroup1-prod
 
 resources:
-  - ../../base
+- ../../base
 
 images:
-  - digest: sha256:4b29ec4e0d7859a33129997c1ff13aa45d3926a1daf9d1a95d82ab2ac09a5036
-    name: ghcr.io/coendv/group1-chatservice
-    newName: ghcr.io/coendv/group1-chatservice
-  - digest: sha256:5e78959cde4be36b369b03c16dd03d6507e4499b9ee246f3df4adc1c249ad3ca
-    name: ghcr.io/coendv/group1-communityservice
-    newName: ghcr.io/coendv/group1-communityservice
-  - digest: sha256:f60e3a62d1a49fa5c2352603d13e635162082325b443f8e5445fe1e9b96ffc06
-    name: ghcr.io/coendv/group1-notificationservice
-    newName: ghcr.io/coendv/group1-notificationservice
-  - digest: sha256:5c1812fdbeec762f423bd8a69c5e2828617345e1a9aa51e635870a03da14bd09
-    name: ghcr.io/coendv/group1-recommendationservice
-    newName: ghcr.io/coendv/group1-recommendationservice
-  - digest: sha256:ab442b221f8b0647e444a6ead5e05fc7aa9377141be0be223bfb71fa4e6654a5
-    name: ghcr.io/coendv/group1-userservice
-    newName: ghcr.io/coendv/group1-userservice
-  - digest: sha256:7f08e61cc229a198fc91476d5dba4e98e26187223b108cca0076ab6e377c3bb1
-    name: ghcr.io/coendv/group1-videoservice
-    newName: ghcr.io/coendv/group1-videoservice
+- digest: sha256:4b29ec4e0d7859a33129997c1ff13aa45d3926a1daf9d1a95d82ab2ac09a5036
+  name: ghcr.io/coendv/group1-chatservice
+  newName: ghcr.io/coendv/group1-chatservice
+- digest: sha256:5e78959cde4be36b369b03c16dd03d6507e4499b9ee246f3df4adc1c249ad3ca
+  name: ghcr.io/coendv/group1-communityservice
+  newName: ghcr.io/coendv/group1-communityservice
+- digest: sha256:f60e3a62d1a49fa5c2352603d13e635162082325b443f8e5445fe1e9b96ffc06
+  name: ghcr.io/coendv/group1-notificationservice
+  newName: ghcr.io/coendv/group1-notificationservice
+- digest: sha256:5c1812fdbeec762f423bd8a69c5e2828617345e1a9aa51e635870a03da14bd09
+  name: ghcr.io/coendv/group1-recommendationservice
+  newName: ghcr.io/coendv/group1-recommendationservice
+- digest: sha256:461838d4903e13d44cc5936bf998fc720bde4f016beb0e7f8936c38b7544cc58
+  name: ghcr.io/coendv/group1-userservice
+  newName: ghcr.io/coendv/group1-userservice
+- digest: sha256:39bd3e8e4f243743b158178663ec6450d4bcd08e599c80e2ffb579701985466f
+  name: ghcr.io/coendv/group1-videoservice
+  newName: ghcr.io/coendv/group1-videoservice
