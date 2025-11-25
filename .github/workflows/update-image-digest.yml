@@ -32,7 +32,7 @@ jobs:
       - name: Checkout deployment repo
         uses: actions/checkout@v4
         with:
-          repository: CoenDV/simpleSlideshow-deploy
+          repository: coendv/simpleSlideshow-deploy
           token: ${{ secrets.DEPLOY_REPO_TOKEN }}
           path: deploy-repo
 
