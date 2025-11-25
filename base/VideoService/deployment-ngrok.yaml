@@ -16,13 +16,15 @@ spec:
         - name: ngrok
           image: ngrok/ngrok:latest
           ports:
-            - containerPort: 8090
+            - containerPort: 4040
               protocol: TCP
-          command:
-            - ngrok
-            - http
-            - --domain=$(NGROK_DOMAIN)
-            - videoservice-service:8085
+              name: web-ui
+          args:
+            - "http"
+            - "--log=stdout"
+            - "--log-level=info"
+            - "--domain=$(NGROK_DOMAIN)"
+            - "videoservice-service:8085"
           env:
             - name: NGROK_AUTHTOKEN
               valueFrom:
