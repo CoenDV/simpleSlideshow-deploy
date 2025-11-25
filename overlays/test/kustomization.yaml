@@ -4,20 +4,20 @@ kind: Kustomization
 namespace: projectgroup1-test
 
 resources:
-  - ../../base
+- ../../base
 images:
-  - digest: sha256:5ca65d2c3f9c97957c82c12685e2e2eed77748aab632b34cddcca4fa8a47c2b1
-    name: ghcr.io/coendv/group1-chatservice
-    newName: ghcr.io/coendv/group1-chatservice
-  - digest: sha256:8c658c80e586389ec96fa14825eb07ed87f1f801af5db1a8a8fe5b89e709d99b
-    name: ghcr.io/coendv/group1-communityservice
-    newName: ghcr.io/coendv/group1-communityservice
-  - digest: sha256:877cceb332b94bdc9d0009616d2150ec777be78502288303dc573ea15b70437a
-    name: ghcr.io/coendv/group1-notificationservice
-    newName: ghcr.io/coendv/group1-notificationservice
-  - digest: sha256:cbcf5428aef4a85745422f9e4c05fce212877ee4f107c35b9aba9b4d4c891dee
-    name: ghcr.io/coendv/group1-userservice
-    newName: ghcr.io/coendv/group1-userservice
-  - digest: sha256:747d37619920e3c1f4ce796d08790506d9b0d04d40aee78e2220dffec0cd0b11
-    name: ghcr.io/coendv/group1-videoservice
-    newName: ghcr.io/coendv/group1-videoservice
+- digest: sha256:edc8e5d3888ea1eac0cf780918cd4f8fe543b0404c0bdf149827adc988c67528
+  name: ghcr.io/coendv/group1-chatservice
+  newName: ghcr.io/coendv/group1-chatservice
+- digest: sha256:8c658c80e586389ec96fa14825eb07ed87f1f801af5db1a8a8fe5b89e709d99b
+  name: ghcr.io/coendv/group1-communityservice
+  newName: ghcr.io/coendv/group1-communityservice
+- digest: sha256:877cceb332b94bdc9d0009616d2150ec777be78502288303dc573ea15b70437a
+  name: ghcr.io/coendv/group1-notificationservice
+  newName: ghcr.io/coendv/group1-notificationservice
+- digest: sha256:cbcf5428aef4a85745422f9e4c05fce212877ee4f107c35b9aba9b4d4c891dee
+  name: ghcr.io/coendv/group1-userservice
+  newName: ghcr.io/coendv/group1-userservice
+- digest: sha256:747d37619920e3c1f4ce796d08790506d9b0d04d40aee78e2220dffec0cd0b11
+  name: ghcr.io/coendv/group1-videoservice
+  newName: ghcr.io/coendv/group1-videoservice
