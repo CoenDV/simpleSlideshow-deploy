@@ -4,6 +4,11 @@ kind: Kustomization
 namespace: projectgroup1-test
 namePrefix: notificationservice-
 
+commonLabels:
+  app.kubernetes.io/name: notificationservice
+  app.kubernetes.io/part-of: slideshare-platform
+  app.kubernetes.io/component: backend
+
 resources:
   - deployment-notificationservice.yaml
   - route-notificationservice.yaml
