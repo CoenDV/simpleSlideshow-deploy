@@ -31,6 +31,8 @@ spec:
               value: postgres
             - name: DATABASE_URL
               value: postgresql://postgres:postgres@communityservice-postgresql:5433/communityservice
+            - name: PORT
+              value: "8083"
             - name: KEYCLOAK_URL
               value: http://userservice-keycloak:8080
             - name: KEYCLOAK_REALM
