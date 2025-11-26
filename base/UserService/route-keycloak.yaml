@@ -5,7 +5,7 @@ metadata:
 spec:
   to:
     kind: Service
-    name: keycloak
+    name: userservice-keycloak
     weight: 100
   port:
     targetPort: http
