@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: postgresql
+spec:
+  selector:
+    app: recommendationservice-postgresql
+  ports:
+    - protocol: TCP
+      port: 5434
+      targetPort: 5434

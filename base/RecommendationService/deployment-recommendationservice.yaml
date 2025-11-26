@@ -18,3 +18,16 @@ spec:
           ports:
             - containerPort: 8084
               protocol: TCP
+          env:
+            - name: DB_HOST
+              value: recommendationservice-postgresql
+            - name: DB_PORT
+              value: "5434"
+            - name: DB_NAME
+              value: recommendationservice
+            - name: DB_USER
+              value: postgres
+            - name: DB_PASSWORD
+              value: postgres
+            - name: DATABASE_URL
+              value: postgresql://postgres:postgres@recommendationservice-postgresql:5434/recommendationservice

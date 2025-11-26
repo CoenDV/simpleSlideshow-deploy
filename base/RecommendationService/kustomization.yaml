@@ -13,6 +13,9 @@ resources:
   - deployment-recommendationservice.yaml
   - route-recommendationservice.yaml
   - service-recommendationservice.yaml
+  - deployment-postgresql.yaml
+  - service-postgresql.yaml
+  - pvc-postgresql.yaml
 
 configurations:
   - kustomizeconfig.yaml
