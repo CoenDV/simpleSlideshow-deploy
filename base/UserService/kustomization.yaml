@@ -16,6 +16,9 @@ resources:
   - deployment-postgresql.yaml
   - service-postgresql.yaml
   - pvc-postgresql.yaml
+  - deployment-keycloak.yaml
+  - service-keycloak.yaml
+  - route-keycloak.yaml
 
 configurations:
   - kustomizeconfig.yaml
