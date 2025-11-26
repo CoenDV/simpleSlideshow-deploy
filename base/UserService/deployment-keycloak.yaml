@@ -31,9 +31,9 @@ spec:
             - name: KC_DB_URL
               value: jdbc:postgresql://userservice-postgresql:5431/userservice
             - name: KC_DB_USERNAME
-              value: postgres
+              value: admin
             - name: KC_DB_PASSWORD
-              value: postgres
+              value: admin
             - name: KC_PROXY
               value: edge
             - name: KC_HOSTNAME_STRICT

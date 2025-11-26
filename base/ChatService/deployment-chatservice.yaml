@@ -34,6 +34,6 @@ spec:
             - name: KEYCLOAK_URL
               value: http://userservice-keycloak:8080
             - name: KEYCLOAK_REALM
-              value: simpleslideshow
+              value: entrepreneur-realm
             - name: KEYCLOAK_CLIENT_ID
-              value: simpleslideshow-client
+              value: user-service

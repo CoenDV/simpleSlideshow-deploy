@@ -26,19 +26,21 @@ spec:
             - name: DB_NAME
               value: userservice
             - name: DB_USER
-              value: postgres
+              value: admin
             - name: DB_PASSWORD
-              value: postgres
+              value: admin
             - name: DATABASE_URL
-              value: postgresql://postgres:postgres@userservice-postgresql:5431/userservice
+              value: postgresql://admin:admin@userservice-postgresql:5431/userservice
+            - name: APP_PORT
+              value: "8081"
             - name: KEYCLOAK_URL
-              value: http://keycloak:8080
+              value: http://userservice-keycloak:8080
             - name: KEYCLOAK_REALM
-              value: simpleslideshow
+              value: entrepreneur-realm
             - name: KEYCLOAK_CLIENT_ID
-              value: simpleslideshow-client
+              value: user-service
             - name: KEYCLOAK_CLIENT_SECRET
-              value: changeme
+              value: HRXz5I7p2RfXuJn4PEqB4PrXcfILQmoG
             - name: KEYCLOAK_ADMIN_USER
               value: admin
             - name: KEYCLOAK_ADMIN_PASS
