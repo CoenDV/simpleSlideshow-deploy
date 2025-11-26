@@ -15,7 +15,7 @@ spec:
       containers:
         - name: keycloak
           image: quay.io/keycloak/keycloak:26.0
-          command:
+          args:
             - start-dev
             - --import-realm
           ports:
