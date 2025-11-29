@@ -20,28 +20,79 @@ spec:
               protocol: TCP
           env:
             - name: DB_HOST
-              value: userservice-postgresql
+              valueFrom:
+                secretKeyRef:
+                  name: userservice-secrets
+                  key: DB_HOST
+
             - name: DB_PORT
-              value: "5431"
+              valueFrom:
+                secretKeyRef:
+                  name: userservice-secrets
+                  key: DB_PORT
+
             - name: DB_NAME
-              value: userservice
+              valueFrom:
+                secretKeyRef:
+                  name: userservice-secrets
+                  key: DB_NAME
+
             - name: DB_USER
-              value: admin
+              valueFrom:
+                secretKeyRef:
+                  name: userservice-secrets
+                  key: DB_USER
+
             - name: DB_PASSWORD
-              value: admin
+              valueFrom:
+                secretKeyRef:
+                  name: userservice-secrets
+                  key: DB_PASSWORD
+
             - name: DATABASE_URL
-              value: postgresql://admin:admin@userservice-postgresql:5431/userservice
+              valueFrom:
+                secretKeyRef:
+                  name: userservice-secrets
+                  key: DATABASE_URL
+
             - name: APP_PORT
-              value: "8081"
+              valueFrom:
+                secretKeyRef:
+                  name: userservice-secrets
+                  key: APP_PORT
+
             - name: KEYCLOAK_URL
-              value: http://userservice-keycloak:8080
+              valueFrom:
+                secretKeyRef:
+                  name: userservice-secrets
+                  key: KEYCLOAK_URL
+
             - name: KEYCLOAK_REALM
-              value: entrepreneur-realm
+              valueFrom:
+                secretKeyRef:
+                  name: userservice-secrets
+                  key: KEYCLOAK_REALM
+
             - name: KEYCLOAK_CLIENT_ID
-              value: user-service
+              valueFrom:
+                secretKeyRef:
+                  name: userservice-secrets
+                  key: KEYCLOAK_CLIENT_ID
+
             - name: KEYCLOAK_CLIENT_SECRET
-              value: HRXz5I7p2RfXuJn4PEqB4PrXcfILQmoG
+              valueFrom:
+                secretKeyRef:
+                  name: userservice-secrets
+                  key: KEYCLOAK_CLIENT_SECRET
+
             - name: KEYCLOAK_ADMIN_USER
-              value: admin
+              valueFrom:
+                secretKeyRef:
+                  name: userservice-secrets
+                  key: KEYCLOAK_ADMIN_USER
+
             - name: KEYCLOAK_ADMIN_PASS
-              value: admin
+              valueFrom:
+                secretKeyRef:
+                  name: userservice-secrets
+                  key: KEYCLOAK_ADMIN_PASS

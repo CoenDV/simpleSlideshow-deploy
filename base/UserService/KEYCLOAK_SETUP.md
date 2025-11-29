@@ -47,7 +47,7 @@ OpenShift route providing external HTTPS access to the KeyCloak admin console wi
 
 The UserService requires the following KeyCloak environment variables:
 
-- `KEYCLOAK_URL`: http://keycloak:8080 (internal KeyCloak service URL)
+- `KEYCLOAK_URL`: https://userservice-keycloak-projectgroup1-prod.apps.inholland-minor.openshift.eu (internal KeyCloak service URL)
 - `KEYCLOAK_REALM`: simpleslideshow (realm name)
 - `KEYCLOAK_CLIENT_ID`: simpleslideshow-client (OAuth client ID)
 - `KEYCLOAK_CLIENT_SECRET`: changeme (**CHANGE IN PRODUCTION**)
