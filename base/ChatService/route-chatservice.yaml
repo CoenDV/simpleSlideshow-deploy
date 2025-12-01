@@ -8,3 +8,6 @@ spec:
     name: chatservice
   port:
     targetPort: 8082
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect

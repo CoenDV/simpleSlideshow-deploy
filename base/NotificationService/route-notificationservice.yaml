@@ -8,3 +8,6 @@ spec:
     name: notificationservice
   port:
     targetPort: 8086
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect

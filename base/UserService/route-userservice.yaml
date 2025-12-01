@@ -8,3 +8,6 @@ spec:
     name: userservice
   port:
     targetPort: 8081
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect
