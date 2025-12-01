@@ -20,20 +20,92 @@ spec:
               protocol: TCP
           env:
             - name: DB_HOST
-              value: chatservice-postgresql
+              valueFrom:
+                secretKeyRef:
+                  name: chatservice-secrets
+                  key: DB_HOST
+
             - name: DB_PORT
-              value: "5432"
+              valueFrom:
+                secretKeyRef:
+                  name: chatservice-secrets
+                  key: DB_PORT
+
             - name: DB_NAME
-              value: chatservice
+              valueFrom:
+                secretKeyRef:
+                  name: chatservice-secrets
+                  key: DB_NAME
+
             - name: DB_USER
-              value: postgres
+              valueFrom:
+                secretKeyRef:
+                  name: chatservice-secrets
+                  key: DB_USER
+
             - name: DB_PASSWORD
-              value: postgres
+              valueFrom:
+                secretKeyRef:
+                  name: chatservice-secrets
+                  key: DB_PASSWORD
+
             - name: DATABASE_URL
-              value: postgresql://postgres:postgres@chatservice-postgresql:5432/chatservice
+              valueFrom:
+                secretKeyRef:
+                  name: chatservice-secrets
+                  key: DATABASE_URL
+
             - name: KEYCLOAK_URL
-              value: http://userservice-keycloak:8080
+              valueFrom:
+                secretKeyRef:
+                  name: chatservice-secrets
+                  key: KEYCLOAK_URL
+
             - name: KEYCLOAK_REALM
-              value: entrepreneur-realm
+              valueFrom:
+                secretKeyRef:
+                  name: chatservice-secrets
+                  key: KEYCLOAK_REALM
+
             - name: KEYCLOAK_CLIENT_ID
-              value: user-service
+              valueFrom:
+                secretKeyRef:
+                  name: chatservice-secrets
+                  key: KEYCLOAK_CLIENT_ID
+
+            - name: KEYCLOAK_CLIENT_SECRET
+              valueFrom:
+                secretKeyRef:
+                  name: chatservice-secrets
+                  key: KEYCLOAK_CLIENT_SECRET
+
+            - name: KEYCLOAK_ADMIN_USER
+              valueFrom:
+                secretKeyRef:
+                  name: chatservice-secrets
+                  key: KEYCLOAK_ADMIN_USER
+
+            - name: KEYCLOAK_ADMIN_PASS
+              valueFrom:
+                secretKeyRef:
+                  name: chatservice-secrets
+                  key: KEYCLOAK_ADMIN_PASS
+
+            - name: USER_SERVICE_URL
+              valueFrom:
+                secretKeyRef:
+                  name: chatservice-secrets
+                  key: USER_SERVICE_URL
+
+            - name: NOTIFICATION_SERVICE_URL
+              valueFrom:
+                secretKeyRef:
+                  name: chatservice-secrets
+                  key: NOTIFICATION_SERVICE_URL
+
+            - name: APP_PORT
+              valueFrom:
+                secretKeyRef:
+                  name: chatservice-secrets
+                  key: APP_PORT
+
