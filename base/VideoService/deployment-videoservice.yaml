@@ -84,3 +84,23 @@ spec:
                 secretKeyRef:
                   name: videoservice-secrets
                   key: MUX_SIGNING_KEY_PRIVATE_KEY
+            - name: KEYCLOAK_URL
+              valueFrom:
+                secretKeyRef:
+                  name: videoservice-secrets
+                  key: KEYCLOAK_URL
+            - name: KEYCLOAK_REALM
+              valueFrom:
+                secretKeyRef:
+                  name: videoservice-secrets
+                  key: KEYCLOAK_REALM
+            - name: KEYCLOAK_CLIENT_ID
+              valueFrom:
+                secretKeyRef:
+                  name: videoservice-secrets
+                  key: KEYCLOAK_CLIENT_ID
+            - name: KEYCLOAK_AUDIENCE
+              valueFrom:
+                secretKeyRef:
+                  name: videoservice-secrets
+                  key: KEYCLOAK_AUDIENCE
