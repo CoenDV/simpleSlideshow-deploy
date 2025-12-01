@@ -39,5 +39,7 @@ spec:
               value: entrepreneur-realm
             - name: KEYCLOAK_CLIENT_ID
               value: user-service
+            - name: KEYCLOAK_AUDIENCE
+              value: account
             - name: COMMUNITY_SERVICE_URL
               value: https://communityservice-communityservice-projectgroup1-prod.apps.inholland-minor.openshift.eu
