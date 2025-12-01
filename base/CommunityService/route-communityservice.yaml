@@ -8,3 +8,6 @@ spec:
     name: communityservice
   port:
     targetPort: 8083
+  tls:
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect
