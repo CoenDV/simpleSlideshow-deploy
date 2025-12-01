@@ -18,3 +18,51 @@ spec:
           ports:
             - containerPort: 8086
               protocol: TCP
+          env:
+            - name: USER_SERVICE_URL
+              valueFrom:
+                secretKeyRef:
+                  name: notificationservice-secrets
+                  key: USER_SERVICE_URL
+
+            - name: SENDER_EMAIL
+              valueFrom:
+                secretKeyRef:
+                  name: notificationservice-secrets
+                  key: SENDER_EMAIL
+
+            - name: AWS_REGION
+              valueFrom:
+                secretKeyRef:
+                  name: notificationservice-secrets
+                  key: AWS_REGION
+
+            - name: AWS_ACCESS_KEY_ID
+              valueFrom:
+                secretKeyRef:
+                  name: notificationservice-secrets
+                  key: AWS_ACCESS_KEY_ID
+
+            - name: AWS_SECRET_ACCESS_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: notificationservice-secrets
+                  key: AWS_SECRET_ACCESS_KEY
+
+            - name: EXPO_ACCESS_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: notificationservice-secrets
+                  key: EXPO_ACCESS_TOKEN
+
+            - name: DEV_MODE
+              valueFrom:
+                secretKeyRef:
+                  name: notificationservice-secrets
+                  key: DEV_MODE
+
+            - name: USE_DUMMY_USER
+              valueFrom:
+                secretKeyRef:
+                  name: notificationservice-secrets
+                  key: USE_DUMMY_USER
