@@ -20,26 +20,67 @@ spec:
               protocol: TCP
           env:
             - name: DB_HOST
-              value: recommendationservice-postgresql
+              valueFrom:
+                secretKeyRef:
+                  name: recommendationservice-secrets
+                  key: DB_HOST
             - name: DB_PORT
-              value: "5434"
+              valueFrom:
+                secretKeyRef:
+                  name: recommendationservice-secrets
+                  key: DB_PORT
             - name: DB_NAME
-              value: recommendationservice
+              valueFrom:
+                secretKeyRef:
+                  name: recommendationservice-secrets
+                  key: DB_NAME
             - name: DB_USER
-              value: postgres
+              valueFrom:
+                secretKeyRef:
+                  name: recommendationservice-secrets
+                  key: DB_USER
             - name: DB_PASSWORD
-              value: postgres
+              valueFrom:
+                secretKeyRef:
+                  name: recommendationservice-secrets
+                  key: DB_PASSWORD
             - name: DATABASE_URL
-              value: postgresql://postgres:postgres@recommendationservice-postgresql:5434/recommendationservice
+              valueFrom:
+                secretKeyRef:
+                  name: recommendationservice-secrets
+                  key: DATABASE_URL
             - name: PORT
-              value: "8084"
+              valueFrom:
+                secretKeyRef:
+                  name: recommendationservice-secrets
+                  key: PORT
             - name: KEYCLOAK_URL
-              value: http://userservice-keycloak:8080
+              valueFrom:
+                secretKeyRef:
+                  name: recommendationservice-secrets
+                  key: KEYCLOAK_URL
             - name: KEYCLOAK_REALM
-              value: entrepreneur-realm
+              valueFrom:
+                secretKeyRef:
+                  name: recommendationservice-secrets
+                  key: KEYCLOAK_REALM
             - name: KEYCLOAK_CLIENT_ID
-              value: user-service
+              valueFrom:
+                secretKeyRef:
+                  name: recommendationservice-secrets
+                  key: KEYCLOAK_CLIENT_ID
             - name: KEYCLOAK_AUDIENCE
-              value: account
+              valueFrom:
+                secretKeyRef:
+                  name: recommendationservice-secrets
+                  key: KEYCLOAK_AUDIENCE
             - name: COMMUNITY_SERVICE_URL
-              value: https://communityservice-communityservice-projectgroup1-prod.apps.inholland-minor.openshift.eu
+              valueFrom:
+                secretKeyRef:
+                  name: recommendationservice-secrets
+                  key: COMMUNITY_SERVICE_URL
+            - name: SERVICE_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: recommendationservice-secrets
+                  key: SERVICE_TOKEN

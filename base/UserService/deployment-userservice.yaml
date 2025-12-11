@@ -96,3 +96,9 @@ spec:
                 secretKeyRef:
                   name: userservice-secrets
                   key: KEYCLOAK_ADMIN_PASS
+
+            - name: SERVICE_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: userservice-secrets
+                  key: SERVICE_TOKEN

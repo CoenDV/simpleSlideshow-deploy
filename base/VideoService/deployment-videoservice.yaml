@@ -109,3 +109,8 @@ spec:
                 secretKeyRef:
                   name: videoservice-secrets
                   key: RECOMMENDATION_SERVICE_URL
+            - name: SERVICE_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: videoservice-secrets
+                  key: SERVICE_TOKEN
