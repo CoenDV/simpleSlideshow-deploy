@@ -25,7 +25,7 @@ images:
 - digest: sha256:d7a072121a96d7a8ece2f9f5ab52a5526f83bfbd259d91b0881c4784729484f7
   name: ghcr.io/coendv/group1-recommendationservice
   newName: ghcr.io/coendv/group1-recommendationservice
-- digest: sha256:95eb4bfd94161d0d03b3e200d3112997ba872802a17e94f601174dbe852b0c2f
+- digest: sha256:3ac7238a9862ad044d3e6d89243344eb4d896b0c2d1755744b5a8edc66fd2029
   name: ghcr.io/coendv/group1-userservice
   newName: ghcr.io/coendv/group1-userservice
 - digest: sha256:4cf8a11ce14fcdb430a824efb3b3d4fb676f318f10ccf0d76c86b56512487b6a
