@@ -1,0 +1,14 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: recommendationservice
+  labels:
+    app: recommendationservice
+spec:
+  selector:
+    matchLabels:
+      app: recommendationservice
+  endpoints:
+    - port: http
+      path: /metrics
+      interval: 15s

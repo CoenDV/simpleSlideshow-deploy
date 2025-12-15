@@ -19,6 +19,7 @@ resources:
   - deployment-keycloak.yaml
   - service-keycloak.yaml
   - route-keycloak.yaml
+  - servicemonitor-userservice.yaml
 
 configurations:
   - kustomizeconfig.yaml
