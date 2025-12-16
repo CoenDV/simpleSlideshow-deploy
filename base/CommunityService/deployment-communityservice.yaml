@@ -79,3 +79,10 @@ spec:
                 secretKeyRef:
                   name: communityservice-secrets
                   key: SERVICE_TOKEN
+          resources:
+            requests:
+              cpu: 100m
+              memory: 256Mi
+            limits:
+              cpu: 500m
+              memory: 512Mi
