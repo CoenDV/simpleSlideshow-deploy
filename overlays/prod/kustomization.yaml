@@ -13,21 +13,21 @@ patches:
     name: userservice-keycloak
 
 images:
-- digest: sha256:ef2fe2938abba069a2f5368c068d68474edaecf13a6fd573d4b8b115714de4c1
+- digest: sha256:e8aea9898f84ad28c7d74fcd3174526f3b02f1ad387408ee5c461b1d9f826914
   name: ghcr.io/coendv/group1-chatservice
   newName: ghcr.io/coendv/group1-chatservice
-- digest: sha256:912ea3543e54bf705c21574a4e9442c0abe25aba29d8caf293f0a5d30ce77829
+- digest: sha256:5878d4a943d1665d474788d437edd4f09e0d7f7462cb6969becda1cc7df50b83
   name: ghcr.io/coendv/group1-communityservice
   newName: ghcr.io/coendv/group1-communityservice
-- digest: sha256:d2a8180ec6cfa9b10d7c5a1b9248af1d0dc7db10d1f4bf0cdd5aacd159c340e6
+- digest: sha256:863bbf1745d86acc6baf2d0346e486a6c330073594d6d671f8974bfb7a6e2951
   name: ghcr.io/coendv/group1-notificationservice
   newName: ghcr.io/coendv/group1-notificationservice
-- digest: sha256:485353ab3d965ad1aeeb46a8eb2bcdc1f5034c65efc5268c47dba16abdd64fc2
+- digest: sha256:d7a072121a96d7a8ece2f9f5ab52a5526f83bfbd259d91b0881c4784729484f7
   name: ghcr.io/coendv/group1-recommendationservice
   newName: ghcr.io/coendv/group1-recommendationservice
-- digest: sha256:cfca86be84dac12e0b1ecc29d05419621f8e7682fda95daa3e4e6c5ee99aa5ce
+- digest: sha256:bcc1d3892a62754d43b4d0a0a6beb16e154bcfca27e3904449b0f4725842d1e0
   name: ghcr.io/coendv/group1-userservice
   newName: ghcr.io/coendv/group1-userservice
-- digest: sha256:3a41be7963f526f58850f15b7be2989d30af3ebfe7e272128bd3c42560ecff6a
+- digest: sha256:4cf8a11ce14fcdb430a824efb3b3d4fb676f318f10ccf0d76c86b56512487b6a
   name: ghcr.io/coendv/group1-videoservice
   newName: ghcr.io/coendv/group1-videoservice

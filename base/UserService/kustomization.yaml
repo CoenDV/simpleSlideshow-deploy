@@ -20,6 +20,7 @@ resources:
   - service-keycloak.yaml
   - route-keycloak.yaml
   - hpa-userservice.yaml
+  - servicemonitor-userservice.yaml
 
 configurations:
   - kustomizeconfig.yaml

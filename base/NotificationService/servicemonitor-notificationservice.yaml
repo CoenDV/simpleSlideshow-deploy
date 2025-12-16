@@ -1,0 +1,14 @@
+apiVersion: monitoring.coreos.com/v1
+kind: ServiceMonitor
+metadata:
+  name: notificationservice
+  labels:
+    app: notificationservice
+spec:
+  selector:
+    matchLabels:
+      app: notificationservice
+  endpoints:
+    - port: http
+      path: /metrics
+      interval: 15s

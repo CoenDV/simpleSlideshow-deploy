@@ -17,6 +17,7 @@ resources:
   - service-postgresql.yaml
   - pvc-postgresql.yaml
   - hpa-communityservice.yaml
+  - servicemonitor-communityservice.yaml
 
 configurations:
   - kustomizeconfig.yaml

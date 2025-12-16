@@ -17,6 +17,7 @@ resources:
   - service-postgresql.yaml
   - pvc-postgresql.yaml
   - hpa-chatservice.yaml
+  - servicemonitor-chatservice.yaml
 
 configurations:
   - kustomizeconfig.yaml

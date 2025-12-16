@@ -2,10 +2,13 @@ apiVersion: v1
 kind: Service
 metadata:
   name: chatservice
+  labels:
+    app: chatservice 
 spec:
   selector:
     app: chatservice
   ports:
-    - protocol: TCP
+    - name: http
+      protocol: TCP
       port: 8082
       targetPort: 8082

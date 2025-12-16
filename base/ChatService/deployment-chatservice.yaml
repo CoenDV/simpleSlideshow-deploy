@@ -108,6 +108,13 @@ spec:
                 secretKeyRef:
                   name: chatservice-secrets
                   key: APP_PORT
+
+            - name: SERVICE_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: chatservice-secrets
+                  key: SERVICE_TOKEN
+
           resources:
             requests:
               cpu: 100m
