@@ -3,7 +3,6 @@ apiVersion: apps/v1
 metadata:
   name: videoservice
 spec:
-  replicas: 1
   selector:
     matchLabels:
       app: videoservice
@@ -114,3 +113,10 @@ spec:
                 secretKeyRef:
                   name: videoservice-secrets
                   key: SERVICE_TOKEN
+          resources:
+            requests:
+              cpu: 200m
+              memory: 512Mi
+            limits:
+              cpu: 1000m
+              memory: 1Gi

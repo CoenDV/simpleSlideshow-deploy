@@ -3,7 +3,6 @@ apiVersion: apps/v1
 metadata:
   name: userservice
 spec:
-  replicas: 1
   selector:
     matchLabels:
       app: userservice
@@ -102,3 +101,10 @@ spec:
                 secretKeyRef:
                   name: userservice-secrets
                   key: SERVICE_TOKEN
+          resources:
+            requests:
+              cpu: 200m
+              memory: 512Mi
+            limits:
+              cpu: 1000m
+              memory: 1Gi

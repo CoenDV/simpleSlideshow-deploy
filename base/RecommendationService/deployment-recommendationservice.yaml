@@ -3,7 +3,6 @@ apiVersion: apps/v1
 metadata:
   name: recommendationservice
 spec:
-  replicas: 1
   selector:
     matchLabels:
       app: recommendationservice
@@ -84,3 +83,10 @@ spec:
                 secretKeyRef:
                   name: recommendationservice-secrets
                   key: SERVICE_TOKEN
+          resources:
+            requests:
+              cpu: 200m
+              memory: 512Mi
+            limits:
+              cpu: 1000m
+              memory: 1Gi

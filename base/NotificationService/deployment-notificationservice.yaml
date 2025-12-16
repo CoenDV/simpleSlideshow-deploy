@@ -3,7 +3,6 @@ apiVersion: apps/v1
 metadata:
   name: notificationservice
 spec:
-  replicas: 1
   selector:
     matchLabels:
       app: notificationservice
@@ -92,4 +91,10 @@ spec:
                 secretKeyRef:
                   name: notificationservice-secrets
                   key: SERVICE_ACCOUNT_TOKEN
-
+          resources:
+            requests:
+              cpu: 200m
+              memory: 512Mi
+            limits:
+              cpu: 1000m
+              memory: 1Gi

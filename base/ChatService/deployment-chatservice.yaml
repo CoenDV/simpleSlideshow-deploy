@@ -3,7 +3,6 @@ apiVersion: apps/v1
 metadata:
   name: chatservice
 spec:
-  replicas: 1
   selector:
     matchLabels:
       app: chatservice
@@ -115,3 +114,10 @@ spec:
                   name: chatservice-secrets
                   key: SERVICE_TOKEN
 
+          resources:
+            requests:
+              cpu: 200m
+              memory: 512Mi
+            limits:
+              cpu: 1000m
+              memory: 1Gi

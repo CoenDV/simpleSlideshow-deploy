@@ -12,7 +12,7 @@ spec:
   selector:
     app: videoservice
   ports:
-    - name: http
+    - name: 8085-tcp
       protocol: TCP
       port: 8085
       targetPort: 8085

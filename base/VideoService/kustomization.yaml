@@ -19,6 +19,7 @@ resources:
   - deployment-ngrok.yaml
   - service-ngrok.yaml
   - route-ngrok.yaml
+  - hpa-videoservice.yaml
   - servicemonitor-videoservice.yaml
 
 configurations:
