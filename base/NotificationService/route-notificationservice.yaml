@@ -7,7 +7,7 @@ spec:
     kind: Service
     name: notificationservice
   port:
-    targetPort: 8086
+    targetPort: http
   tls:
     termination: edge
     insecureEdgeTerminationPolicy: Redirect

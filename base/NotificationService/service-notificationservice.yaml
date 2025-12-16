@@ -8,7 +8,11 @@ spec:
   selector:
     app: notificationservice
   ports:
-    - name: http         
+    - name: http
       protocol: TCP
       port: 8086
       targetPort: 8086
+    - name: metrics
+      protocol: TCP
+      port: 9090
+      targetPort: 9090
