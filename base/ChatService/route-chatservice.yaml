@@ -7,7 +7,7 @@ spec:
     kind: Service
     name: chatservice
   port:
-    targetPort: 8082
+    targetPort: http
   tls:
     termination: edge
     insecureEdgeTerminationPolicy: Redirect

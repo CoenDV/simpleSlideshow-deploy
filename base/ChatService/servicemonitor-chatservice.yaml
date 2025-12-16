@@ -7,6 +7,6 @@ spec:
     matchLabels:
       app: chatservice
   endpoints:
-    - port: http
+    - port: metrics
       path: /metrics
       interval: 15s
