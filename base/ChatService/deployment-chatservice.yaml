@@ -3,7 +3,6 @@ apiVersion: apps/v1
 metadata:
   name: chatservice
 spec:
-  replicas: 1
   selector:
     matchLabels:
       app: chatservice
@@ -117,8 +116,8 @@ spec:
 
           resources:
             requests:
-              cpu: 100m
-              memory: 256Mi
-            limits:
-              cpu: 500m
+              cpu: 200m
               memory: 512Mi
+            limits:
+              cpu: 1000m
+              memory: 1Gi
