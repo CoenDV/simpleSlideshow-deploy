@@ -9,6 +9,6 @@ spec:
     matchLabels:
       app: videoservice
   endpoints:
-    - port: metrics
+    - port: 8085-tcp
       path: /metrics
       interval: 15s
