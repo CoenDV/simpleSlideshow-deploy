@@ -68,29 +68,17 @@ spec:
                   name: notificationservice-secrets
                   key: USE_DUMMY_USER
 
-            - name: KEYCLOAK_URL
+            - name: NOTIFICATION_SERVICE_TOKEN
               valueFrom:
                 secretKeyRef:
                   name: notificationservice-secrets
-                  key: KEYCLOAK_URL
+                  key: NOTIFICATION_SERVICE_TOKEN
 
-            - name: KEYCLOAK_REALM
+            - name: USER_SERVICE_TOKEN
               valueFrom:
                 secretKeyRef:
                   name: notificationservice-secrets
-                  key: KEYCLOAK_REALM
-
-            - name: KEYCLOAK_AUDIENCE
-              valueFrom:
-                secretKeyRef:
-                  name: notificationservice-secrets
-                  key: KEYCLOAK_AUDIENCE
-
-            - name: SERVICE_ACCOUNT_TOKEN
-              valueFrom:
-                secretKeyRef:
-                  name: notificationservice-secrets
-                  key: SERVICE_ACCOUNT_TOKEN
+                  key: USER_SERVICE_TOKEN
           resources:
             requests:
               cpu: 200m

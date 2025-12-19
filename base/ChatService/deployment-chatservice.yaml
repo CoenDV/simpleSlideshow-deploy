@@ -110,11 +110,21 @@ spec:
                   name: chatservice-secrets
                   key: APP_PORT
 
-            - name: SERVICE_TOKEN
+            - name: USER_SERVICE_TOKEN
               valueFrom:
                 secretKeyRef:
                   name: chatservice-secrets
-                  key: SERVICE_TOKEN
+                  key: USER_SERVICE_TOKEN
+            - name: NOTIFICATION_SERVICE_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: userservice-secrets
+                  key: NOTIFICATION_SERVICE_TOKEN
+            - name: SENDER_EMAIL
+              valueFrom:
+                secretKeyRef:
+                  name: userservice-secrets
+                  key: SENDER_EMAIL
 
           resources:
             requests:
