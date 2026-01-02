@@ -4,6 +4,7 @@ metadata:
   name: userservice
   labels:
     app: userservice
+    release: prometheus
 spec:
   selector:
     matchLabels:
