@@ -12,3 +12,7 @@ spec:
       protocol: TCP
       port: 8083
       targetPort: 8083
+    - name: metrics
+      protocol: TCP
+      port: 9090
+      targetPort: 9090
