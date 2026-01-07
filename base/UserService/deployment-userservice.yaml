@@ -119,13 +119,18 @@ spec:
                   name: userservice-secrets
                   key: NOTIFICATION_SERVICE_URL
 
+            - name: HOME
+              value: /tmp
+            - name: XDG_CACHE_HOME
+              value: /tmp/.cache
+
             - name: GOCACHE
               value: /tmp/go/cache
             - name: GOMODCACHE
               value: /tmp/go/pkg/mod
 
             - name: S3_ENDPOINT
-              value: minio:9000
+              value: userservice-minio:9000
             - name: S3_USE_SSL
               value: "false"
             - name: S3_BUCKET
@@ -141,6 +146,9 @@ spec:
                 secretKeyRef:
                   name: minio-credentials
                   key: secretkey
+            - name: S3_PUBLIC_BASE_URL
+              value: https://<JOUW-MINIO-API-ROUTE-HOST>/user-media
+
 
           resources:
             requests:

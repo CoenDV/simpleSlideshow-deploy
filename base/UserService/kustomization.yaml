@@ -21,6 +21,10 @@ resources:
   - route-keycloak.yaml
   - hpa-userservice.yaml
   - servicemonitor-userservice.yaml
+  - deployment-minio.yaml
+  - service-minio.yaml
+  - route-minio.yaml
+  - pvc-minio.yaml
 
 configurations:
   - kustomizeconfig.yaml
