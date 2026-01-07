@@ -130,7 +130,7 @@ spec:
               value: /tmp/go/cache
             - name: GOMODCACHE
               value: /tmp/go/pkg/mod
-              
+
             - name: S3_ENDPOINT
               valueFrom:
                 secretKeyRef:
@@ -166,6 +166,12 @@ spec:
                 secretKeyRef:
                   name: minio-secrets
                   key: S3_PUBLIC_BASE_URL
+            - name: S3_EXTERNAL_ENDPOINT
+              valueFrom:
+                secretKeyRef:
+                  name: minio-secrets
+                  key: S3_EXTERNAL_ENDPOINT
+
 
           resources:
             requests:
