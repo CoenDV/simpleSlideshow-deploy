@@ -151,7 +151,7 @@ spec:
               valueFrom:
                 secretKeyRef:
                   name: minio-secrets
-                  key: ACCESKEY
+                  key: ACCESSKEY
 
             - name: S3_SECRET_KEY
               valueFrom:
