@@ -118,7 +118,7 @@ spec:
             - name: WATERMARK_ENABLED
               value: "true"
             - name: WATERMARK_IMAGE_URL
-              value: "https://ask22.app/wp-content/uploads/2023/12/22_TwentyTwo_Logo.png"
+              value: "https://www.dropbox.com/scl/fi/3qvwlq7pj2zyh98aud1gw/app22-logo.png?rlkey=sema09d69df2ztwb7m0n3ty8j&e=1&st=wh8fwlfw&dl=0"
             - name: WATERMARK_POSITION
               value: "bottom-right"
             - name: WATERMARK_WIDTH
