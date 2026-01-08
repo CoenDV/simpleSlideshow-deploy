@@ -23,7 +23,8 @@ resources:
   - servicemonitor-userservice.yaml
   - deployment-minio.yaml
   - service-minio.yaml
-  - route-minio.yaml
+  - route-minio-api.yaml
+  - route-minio-console.yaml
   - pvc-minio.yaml
 
 configurations:
