@@ -13,7 +13,7 @@ patches:
     name: userservice-keycloak
 
 images:
-- digest: sha256:8e465bb2360e09bb4b4523abb5447a96e3337ddce4c1fb0f112b8d2354300227
+- digest: sha256:cef64613cac003b6f20bc9cf2d8521633b46802fdc0e9e9c68fdd0823eac9675
   name: ghcr.io/coendv/group1-chatservice
   newName: ghcr.io/coendv/group1-chatservice
 - digest: sha256:6fd53b3433f4a6f2cbe583abdb0b7a292a16d9603a6622dc2a3bc468e9ceb167
